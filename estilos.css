@@ -13,6 +13,61 @@ header, nav, footer, body {
     min-width: 400px;
 }
 
+/* barra de navegacion */
+.navar {
+    background-color: rgb(219, 164, 164);
+    display: flex;
+    flex-flow: row wrap;
+    place-content: space-around;
+    
+}
+ ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    place-content: space-around;
+}
+
+li {
+    float: left;
+}
+
+li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    border-right: 1px solid navy;
+}
+
+li a:visited {
+    color: rgb(75, 64, 64);
+}
+
+li a:hover {
+    background-color: rgb(177, 148, 148);
+    color: blue;
+}
+
+.logo {
+    justify-content: center;
+    text-align: center;
+    color: black;
+    border-radius: 50%;
+}
+.logo:visited {
+    color: rgb(75, 64, 64);
+}
+.logo:hover {
+    color: blue;
+}
+
+/* fin barra de navegacion*/
+
 #about {
     border: 3px red solid;
     min-height: 50px;
