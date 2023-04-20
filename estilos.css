@@ -54,7 +54,6 @@ li a:hover {
 }
 
 .logo {
-    justify-content: center;
     text-align: center;
     color: black;
     border-radius: 50%;
@@ -74,7 +73,7 @@ li a:hover {
     margin: 0.5rem;
 }
 
-#galeria {
+#reseñas {
     border: 3px red solid;
     min-height: 50px;
     margin: 0.5rem;
@@ -86,7 +85,7 @@ li a:hover {
     margin: 0.5rem;
 }
 
-#blog {
+#menu {
     border: 3px red solid;
     min-height: 50px;
     margin: 0.5rem;
