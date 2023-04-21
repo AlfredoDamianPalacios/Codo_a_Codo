@@ -1,61 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>PROYECTO DE RESTAURANTE</title>
 
     <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/bbc127f6a8.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer> </script>
 
 </head>
+
 <body>
 
-     <!-- Navbar -->
-     <nav class="navar">
-            <ul>
-                <li >
-                    <a href="#home">INICIO</a>
-                </li>
-                <li >
-                    <a href="#about">Acerca de</a> <!--Esta parte hace ALE -->
-                </li>
-                <li c>
-                    <a href="#reseñas">Reseñas</a>
-                </li>
-                <li >
-                    <a href="#reservas">Reserva una mesa</a>
-                </li>
-            </ul>
-            <a class="logo" href="#home"> <
-                <img src="Img/ORIGINAL-modified.png" alt="Logo del restaurante">
-                <div>PROYECTO <br> RESTAURANTE</div>
-            </a>
-            <ul c>
-                <li >
-                    <a href="#menu">MENU</a>
-                </li>
-                <li >
-                    <a href="#contact">CONTACTANOS</a>  <!-- Esta parte la hace TOMAS -->
-                </li>
-                <li c>
-                    <a rel="stylesheet" href="/registro.html">REGISTRARSE</a> <!-- Esta parte la hace TOMAS -->
-                </li>
-            </ul>
-        
+    <!--  BARRA DE NAVEGACION -->
+    <nav class="navar">
+        <ul>
+            <li>
+                <a href="#home">INICIO</a>
+            </li>
+            <li>
+                <a href="#about">Acerca de</a> <!--Esta parte hace ALE -->
+            </li>
+            <li c>
+                <a href="#reseñas">Reseñas</a>
+            </li>
+            <li>
+                <a href="#reservas">Reserva una mesa</a>
+            </li>
+        </ul>
+        <a class="logo" href="#home">
+            <img src="Img/icono/ORIGINAL-modified.png" alt="Logo del restaurante">
+        </a>
+        <ul c>
+            <li>
+                <a href="#menu">MENU</a>
+            </li>
+            <li>
+                <a href="#contact">CONTACTANOS</a> <!-- Esta parte la hace TOMAS -->
+            </li>
+            <li c>
+                <a rel="stylesheet" href="/registro.html">REGISTRARSE</a> <!-- Esta parte la hace TOMAS -->
+            </li>
+        </ul>
+
     </nav>
+    <!--   fin BARRA DE NAVEGACION -->
 
 
-    <!-- header  id="home" -->
-    <header id="home"> 
-        <div>
-            <h1>Food Hut</h1>
-            <h2>Always fresh &amp; Delightful</h2>
+    <!-- header INICIO o HOMEPAGE ..  -->
+    <header id="home" class="carrConteiner">
+        <i id="left" class="fa-solid fa-circle-chevron-left"></i>
+        <div class="carrusel">
+
+            <img src="Img/carrusel/gallary-1.jpg" alt="img">
+            <img src="Img/carrusel/gallary-2.jpg" alt="img">
+            <img src="Img/carrusel/gallary-3.jpg" alt="img">
+            <img src="Img/carrusel/gallary-4.jpg" alt="img">
+            <img src="Img/carrusel/gallary-5.jpg" alt="img">
+            <img src="Img/carrusel/gallary-6.jpg" alt="img">
+
             <a href="#galeria">View Our gallary</a>
         </div>
+        
+        <i id="rigth" class="fa-solid fa-circle-chevron-right"></i>
     </header>
-    
+
 
     <!--  About Section  -->
     <div id="about">
@@ -75,7 +88,8 @@
                             nulla recusandae porro minus nemo eaque cum repudiandae quidem voluptate magnam voluptatum?
                             <br>Nobis, saepe sap
                             iente omnis qui eligendi pariatur. quis voluptas. Assumenda facere adipisci quaerat. Illum
-                            doloremque quae omnis vitae.</p>
+                            doloremque quae omnis vitae.
+                        </p>
                         <p><b>Lonsectetur adipisicing elit. Blanditiis aspernatur, ratione dolore vero asperiores
                                 explicabo.</b></p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ab itaque modi, reprehenderit
@@ -188,7 +202,7 @@
 
     <!-- MENU Section  -->
     <div id="menu">
-        <h2 >EVENTS AT THE FOOD HUT</h2>
+        <h2>EVENTS AT THE FOOD HUT</h2>
         <div>
             <div>
                 <ul id="pills-tab" role="tablist">
@@ -196,9 +210,8 @@
                         <a id="pills-home-tab" data-toggle="pill" href="#foods" role="tab" aria-controls="pills-home"
                             aria-selected="true">Foods</a>
                     </li>
-                    <li
-                        <a id="pills-profile-tab" data-toggle="pill" href="#juices" role="tab"
-                            aria-controls="pills-profile" aria-selected="false">Juices</a>
+                    <li <a id="pills-profile-tab" data-toggle="pill" href="#juices" role="tab"
+                        aria-controls="pills-profile" aria-selected="false">Juices</a>
                     </li>
                 </ul>
             </div>
@@ -328,6 +341,7 @@
         <p> Copyright </p>
     </div>
     <!-- end of page footer -->
-    
+
 </body>
+
 </html>
