@@ -18,6 +18,7 @@ body {
     min-height: 50px;
     margin: 0.5rem;
     min-width: 400px;
+    
 }
 
 /* barra de navegacion */
@@ -26,6 +27,7 @@ body {
     display: flex;
     flex-flow: row wrap;
     place-content: space-around;
+    
 }
 
 ul {
@@ -39,7 +41,8 @@ ul {
 }
 
 li {
-    float: left;
+    display: flex;
+    justify-content: space-between;
 }
 
 li a {
@@ -58,21 +61,14 @@ li a:visited {
 li a:hover {
     background-color: rgb(177, 148, 148);
     color: blue;
+    transition: 0.5s;
 }
 
 .logo {
     text-align: center;
-    color: black;
     border-radius: 50%;
 }
 
-.logo:visited {
-    color: rgb(75, 64, 64);
-}
-
-.logo:hover {
-    color: blue;
-}
 
 
 /* fin barra de navegacion*/
@@ -139,25 +135,29 @@ li a:hover {
     margin-left: 0px;
 }
 
-@media screen and (max-width: 900px) {
-    .carrusel img {
-        width: calc(100% / 2);
-    }
-}
 
-@media screen and (max-width: 550px) {
-    .carrusel img {
-        width: 100%;
-    }
-}
 
 /*Fin "INICIO" - carrusel*/
 
 
+/* modificado por alejandro caceres*/
 #about {
+    display: flex;
+    align-items: baseline;
+    background-color:rgb(200, 108, 112);
     border: 3px red solid;
-    min-height: 50px;
     margin: 0.5rem;
+}
+
+.hoja1, .hoja2, .hoja3, .hoja4 {
+    width: auto;
+    height: auto;
+    float: left;
+    background-color: rgb(128, 42, 42);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
 }
 
 #reseñas {
@@ -197,3 +197,24 @@ li a:hover {
     margin-right: 20px;
 }
 /* end footer */
+
+@media screen and (max-width: 900px) {
+    .carrusel img {
+        width: calc(100% / 2);
+    }
+    #about {
+        display: flex;
+        align-items: baseline;
+        flex-direction: column;
+}
+
+@media screen and (max-width: 550px) {
+    .carrusel img {
+        width: 100%;
+    }
+    
+    #about {
+        display: flex;
+        align-items: baseline;
+        flex-direction: column;
+}
