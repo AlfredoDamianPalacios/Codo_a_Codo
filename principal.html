@@ -9,8 +9,11 @@
     <title>PROYECTO DE RESTAURANTE</title>
 
     <link rel="stylesheet" href="estilos.css">
+    <!-- CDN de Vue, version de desarrollo -->
+    <script src="https://unpkg.com/vue@next"></script>
     <script src="https://kit.fontawesome.com/bbc127f6a8.js" crossorigin="anonymous"></script>
     <script src="script.js" defer> </script>
+    
 
 </head>
 
@@ -111,108 +114,43 @@
     <!--termina seccion alejandro caceres-->
 
 
-    <!--  gallary Section  -->
-    <div id="reseñas">
-        <h2>OUR MENU</h2>
+    <!--  reseñas Section  -->
+    <div id="reseñas" class="container">
+        <h2>RESEÑAS</h2>
+        <button class="reserve-btn" v-on:click="traerDatosAPI">Mostrar Reseñas</button>
+        <div v-html="HTML_a_mostrar" class="container2"></div>
     </div>
-    <div>
-        <div>
-            <img src="" alt="">
-            <a href="#">
-                <i></i </a>
-        </div>
-        <div>
-            <img src="" alt="">
-            <a href="#">
-                <i></i </a>
-        </div>
-        <div>
-            <img src="">
-            <a href="#">
-                <i></i>
-            </a>
-        </div>
-        <div>
-            <img src="" alt="" ">
-            <a href=" #">
-            <i></i>
-            </a>
-        </div>
-        <div>
-            <img src="" alt="">
-            <a href="#">
-                <i></i>
-            </a>
-        </div>
-        <div">
-            <a href="#">
-                <i></i>
-            </a>
-    </div>
-    <div>
-        <img src="" alt="">
-        <a href="#">
-            <i></i>
-        </a>
-    </div>
-    <div>
-        <img src="" alt="">
-        <a href="#">
-            <i></i>
-        </a>
-    </div>
-    <div>
-        <img src="" alt=" >
-            <a href=" #">
-        <i></i>
-        </a>
-    </div>
-    <div>
-        <img src="" alt="">
-        <a href="#">
-            <i></i>
-        </a>
-    </div>
-    <div>
-        <img src="" alt="" class="gallary-img">
-        <a href="#">
-            <i></i>
-        </a>
-    </div>
-    <div>
-        <img src="" alt="">
-        <a href="#">
-            <i></i>
-        </a>
-    </div>
-    </div>
+
 
     <!-- book a table Section  -->
     <div id="reservas">
-        <div>
-            <h2>BOOK A TABLE</h2>
-            <div>
-                <div>
-                    <input type="email" id="booktable" placeholder="EMAIL">
-                </div>
-                <div>
-                    <input type="number" id="booktable" placeholder="NUMBER OF GUESTS" max="20" min="0">
-                </div>
-                <div>
-                    <input type="time" id="booktable" placeholder="EMAIL">
-                </div>
-                <div>
-                    <input type="date" id="booktable" placeholder="12/12/12">
-                </div>
+        <H1>RESERVAR UNA MESA</H1>
+        <section class="book-table">
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
             </div>
-            <a href="#" class="btn btn-lg btn-primary" id="rounded-btn">FIND TABLE</a>
-        </div>
+            <div class="input-group">
+                <label for="guests">Cantidad de personas:</label>
+                <input type="number" id="guests" min="1" required>
+            </div>
+            <div class="input-group">
+                <label for="time">Hora:</label>
+                <input type="time" id="time" required>
+            </div>
+            <div class="input-group">
+                <label for="date">Fecha:</label>
+                <input type="date" id="date" required>
+            </div>
+            <button class="reserve-btn">RESERVAR</button>
+        </section>
     </div>
+
 
     <!-- MENU Section  -->
     <div id="menu">
         <a id="menu"></a>
-        <h2>EVENTS AT THE FOOD HUT</h2>
+        <h2>MENU</h2>
         <div>
             <div>
                 <ul id="pills-tab" role="tablist">
@@ -331,14 +269,19 @@
     </div>
 
     <!-- page footer  -->
+    <hr>
     <footer class="footer">
 
         <div class="footer-section">
-            <h3>EMAIL US</h3>
+            <a href="mailto:example@example.com">
+                <h3>EMAIL US</h3>
+            </a>
             <P>info@website.com</P>
         </div>
         <div class="footer-section">
-            <h3>CALL US</h3>
+            <a href="tel:+(123) 456-7890">
+                <h3>CALL US</h3>
+            </a>
             <P>(123) 456-7890</P>
         </div>
         <div class="footer-section">
