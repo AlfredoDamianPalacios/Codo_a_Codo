@@ -10,131 +10,65 @@ html {
     height: 100%;
 }
 
-header,
-nav,
 body {
+    padding-top: 10px;
+}
+
+header {
     border: 3px red solid;
     min-height: 50px;
     margin: 0.5rem;
     min-width: 400px;
-    
 }
 
 /* barra de navegacion */
+
+nav {
+    background:rgb(200, 108, 112);
+    padding: 0 15pc;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
 .navar {
-    background-color: rgb(219, 164, 164);
-    display: flex;
-    flex-flow: row wrap;
-    place-content: space-around;
+    list-style: none;
+}
+
+.navar li a {
+    display: block;
+    padding: 15px 5px;
     
 }
 
-ul {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden;
-    display: flex;
-    flex-flow: row wrap;
-    place-content: space-around;
+.toggle {
+    font-size: 20px;
 }
 
-li {
-    display: flex;
-    justify-content: space-between;
+.navar-logo {
+    font: size 50px;
+    padding: 7.5px 10px 7.5px 0;
 }
 
-li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 16px 16px;
-    text-decoration: none;
-
+.item {
+    padding: 10px;
 }
 
-li a:visited {
-    color: rgb(75, 64, 64);
+.item.button {
+    padding: 9px 5px;
 }
 
-li a:hover {
-    background-color: rgb(177, 148, 148);
-    color: blue;
-    transition: 0.5s;
+.item:not(.button) a:hover,
+.item a:hover::after {
+    color: #ccc;
 }
-
-.logo {
-    text-align: center;
-    border-radius: 50%;
-}
-
 
 
 /* fin barra de navegacion*/
 
-/*INICIO- carrusel*/
-.carrConteiner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 30vh;
-    max-width: 1700px;
-    padding: 0 35px;
-    position: relative;
-}
 
-.carrConteiner i {
-    top: 50%;
-    height: 46px;
-    width: 46px;
-    cursor: pointer;
-    font-size: 2rem;
-    text-align: center;
-    line-height: 46px;
-    background: white;
-    border-radius: 50%;
-    position: absolute;
-    transform: translateY(-50%);
-}
-
-.carrConteiner i:first-child {
-    left: -23px;
-}
-
-.carrConteiner i:last-child {
-    left: 98%;
-}
-
-.carrConteiner .carrusel {
-    white-space: nowrap;
-    font-size: 0px;
-    cursor: pointer;
-    overflow: hidden;
-    scroll-behavior: smooth;
-}
-
-.carrusel.dragging {
-    cursor: grab;
-    scroll-behavior: auto;
-}
-
-.carrusel.dragging img {
-    pointer-events: none;
-}
-
-.carrusel img {
-    height: 250px;
-    object-fit: cover;
-    width: calc(100% / 3);
-    margin-left: 14px;
-    width: calc(100%/3);
-}
-
-.carrusel img:first-child {
-    margin-left: 0px;
-}
-
-/*Fin "INICIO" - carrusel*/
 
 
 /* seccion #abaut hecho Alejandro*/
@@ -182,8 +116,8 @@ li a:hover {
     margin: 0.5rem;
 }
 
-/*review section*/
 
+/*review section*/
 
 .container {
     display: flex;
@@ -269,23 +203,127 @@ a {
 /* end footer */
 
 /*puntos de corte*/
-@media screen and (max-width: 900px) {
-    .carrusel img {
-        width: calc(100% / 2);
-    }
+@media screen and (max-width: 700px) {
     #about {
         display: flex;
         align-items: baseline;
         flex-direction: column;
+    }
+
+    .navar {
+        justify-content: center;
+    }
+    .navar-logo {
+        flex: 1;
+    }
+
+    .item.button {
+        width: auto;
+        order: 1;
+        display: block;
+    }
+    .toggle {
+        flex: 1;
+        display: block;
+        text-align: right;
+        order: 2;
+    }
+    .active .item {
+        display: block;
+    }
+    .item {
+        display: none;
+    }
+    
+
+
+
+
 }
 
 @media screen and (max-width: 550px) {
-    .carrusel img {
-        width: 100%;
-    }
     
-    #about {
+#about {
         display: flex;
         align-items: baseline;
         flex-direction: column;
+    }
+
+body {
+        padding-top: 0px;
+}
+nav {
+    padding: 0;
+}
+
+.navar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+        
+.navar li a {
+    display: block;
+    padding: 15px 5px;
+}
+        
+.toggle {
+    order: 1;
+    font-size: 20px;
+    display:block;
+    padding: 15px;
+}
+
+.navar-logo {
+    font-size: 20px;
+}
+
+.item {
+    order: 3;
+    padding: 10px;
+    width: 100%;
+    text-align: center; 
+    display: none;
+}
+
+.item.button {
+    padding: 9px 5px;
+    display: none;
+}
+
+.item:not(.button) a:hover,
+.item a:hover::after {
+            color: #ccc;
+        } 
+
+.active .item {
+    display: block;
+}
+    
+}
+
+@media all and (min-width: 960px) {
+
+    .navar {
+        display: flex;
+    }
+    .item {
+        order: 1;
+        position: relative;
+        display: block;
+        width: auto;
+    }
+    .button {
+        order: 2;
+    }
+    .toggle {
+        display: none;
+    }
+    .active .item {
+        display: block;
+    }
+    .navar-logo {
+        font-size: 25px;
+    }
 }
