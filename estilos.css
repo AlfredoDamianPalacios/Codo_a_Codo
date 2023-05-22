@@ -197,3 +197,18 @@ li a:hover {
     margin-right: 20px;
 }
 /* end footer */
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "maps texto1 ."
+      ". . ."
+      ". . .";
+  }
+  
+  .maps { grid-area: maps; }
+  
+  .texto1 { grid-area: texto1; }
+  
