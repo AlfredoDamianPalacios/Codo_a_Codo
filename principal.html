@@ -13,7 +13,7 @@
     <script src="https://unpkg.com/vue@next"></script>
     <script src="https://kit.fontawesome.com/bbc127f6a8.js" crossorigin="anonymous"></script>
     <script src="script.js" defer> </script>
-    
+
 
 </head>
 
@@ -22,36 +22,45 @@
     <!--  BARRA DE NAVEGACION -->
     <nav>
         <ul class="navar">
-            <li class="navar-logo">Restaurante para el Proyecto</li>
+            <li class="navar-logo">LOGO</li>
 
             <li class="item"> <a href="#home">Inicio</a> </li>
-            
+
             <li class="item"> <a href="#about">Acerca de</a> </li> <!--Esta parte hace ALE  -->
-            
+
             <li class="item"> <a href="#reseñas">Reseñas</a></li>
-            
+
             <li class="item"> <a href="#reservas">Reserva una mesa</a></li>
-            
+
             <li class="item"> <a href="#menu">Menú</a> </li><!-- Estaba haciendo Matarazzo, pero nunca se comunico -->
-            
+
             <li class="item"> <a href="#contact">Contactanos</a> </li> <!-- Esta parte la hace TOMAS (deja el curso) -->
-            
+
             <li class="item button"> <a href="#"> Iniciar Sesion </a> </li>
 
-            <li class="item button secondary"> <a rel="stylesheet" href="registro.html">Registrarse</a> </li> <!-- Esta parte la hace TOMAS -->
+            <li class="item button secondary"> <a rel="stylesheet" href="registro.html">Registrarse</a> </li>
+            <!-- Esta parte la hace TOMAS -->
 
-            <li class="toggle"> <a href="#"> <i class="fas fa-bars"></i> </a>  </li>
+            <li class="toggle"> <a href="#"> <i class="fas fa-bars"></i> </a> </li>
         </ul>
-    
+
     </nav>
     <!--   fin BARRA DE NAVEGACION -->
 
 
     <!-- header INICIO o HOMEPAGE ..  -->
-    <header id="home" class="carrConteiner">
-       
+    <header id="home">
+        <button class="reserve-btn"> <a href="#about">Empecemos </a> </button>
+        <div class="slider-frame">
+            <ul>
+                <li><img src="img/carrusel/slider1.jpg" alt=""></li>
+                <li><img src="Img/carrusel/slider2.jpg" alt=""></li>
+                <li><img src="Img/carrusel/slider3.jpg" alt=""></li>
+                <li><img src="Img/carrusel/slider4.jpg" alt=""></li>
+            </ul>
+        </div>
     </header>
-
+    <!-- fin homepage 
 
     <!--  seccion designada alejandro caceres   -->
     <section id="about">
@@ -131,124 +140,73 @@
 
     <!-- MENU Section  -->
     <div id="menu">
-        <a id="menu"></a>
-        <h2>MENU</h2>
-        <div>
-            <div>
-                <ul id="pills-tab" role="tablist">
-                    <li>
-                        <a id="pills-home-tab" data-toggle="pill" href="#foods" role="tab" aria-controls="pills-home"
-                            aria-selected="true">Foods</a>
-                    </li>
-                    <li <a id="pills-profile-tab" data-toggle="pill" href="#juices" role="tab"
-                        aria-controls="pills-profile" aria-selected="false">Juices</a>
-                    </li>
-                </ul>
+        <section class="menu">
+            <div class="menu-item">
+                <img src="Img/menu/gallary-2.jpg" alt="Comida 1">
+                <h3>Comida 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias iure veniam repellendus porro
+                    perspiciatis placeat dolore, aperiam accusantium laudantium nobis?</p>
             </div>
-        </div>
-        <div id="pills-tabContent">
-            <div id="foods" role="tabpanel" aria-labelledby="pills-home-tab">
-                <div>
-                    <div>
-                        <div>
-                            <img src="" alt="">
-                            <div>
-                                <h1 <a href="#">$5</a></h1>
-                                <h4>Reiciendis Laborum </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum
-                                    officiis
-                                    fugit laudantium voluptatem sit iste delectus qui ex. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <img src="" alt="" class="rounded-0 card-img-top mg-responsive">
-                            <div c>
-                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$12</a></h1>
-                                <h4>Adipisci Totam</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum
-                                    officiis
-                                    fugit laudantium voluptatem sit iste delectus qui ex. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <img src="" alt="">
-                            <div>
-                                <h1><a href="#">$8</a></h1>
-                                <h4>Dicta Deserunt</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum
-                                    officiis fugit
-                                    laudantium voluptatem sit iste delectus qui ex. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="juices" role="tabpanel" aria-labelledby="pills-profile-tab">
-                <div>
-                    <div>
-                        <div>
-                            <img src="" alt="">
-                            <div>
-                                <h1><a href="#">$15</a></h1>
-                                <h4>Consectetur Adipisicing Elit</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum
-                                    officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <img src="" alt="">
-                            <div>
-                                <h1><a href="#">$29</a></h1>
-                                <h4>Ullam Laboriosam</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum
-                                    officiis fugit
-                                    laudantium voluptatem sit iste delectus qui ex. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <img src="" alt="">
-                            <div>
-                                <h1><a href="#">$3</a></h1>
-                                <h4>Fugit Ipsam</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum
-                                    officiis fugit
-                                    laudantium voluptatem sit iste delectus qui ex. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
+            <div class="menu-item">
+                <img src="Img/menu/gallary-3.jpg" alt="Comida 2">
+                <h3>Comida2 2</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem aut nobis recusandae voluptatum quaerat
+                    esse.</p>
+            </div>
+
+            <div class="menu-item">
+                <img src="Img/menu/gallary-9.jpg" alt="Comida 3">
+                <h3>Comida 3</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem aut nobis recusandae voluptatum quaerat
+                    esse.</p>
+            </div>
+
+            <div class="menu-item">
+                <img src="Img/menu/gallary-4.jpg" alt="Comida 4">
+                <h3>Comida 4</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem aut nobis recusandae voluptatum quaerat
+                    esse.</p>
+            </div>
+
+            <div class="menu-item">
+                <img src="Img/menu/gallary-5.jpg" alt="Comida 5">
+                <h3>Comida 5</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem aut nobis recusandae voluptatum quaerat
+                    esse.</p>
+            </div>
+
+            <div class="menu-item">
+                <img src="Img/menu/blog-4.jpg" alt="Comida 6">
+                <h3>Comida 6</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem aut nobis recusandae voluptatum quaerat
+                    esse.</p>
+            </div>
+
+
+        </section>
+    </div>
+    <!-- emd menu-->
 
     <!-- CONTACT Section  -->
-    <div id="contact">
-        <div>
-            <div>
-                <div id="map" style="width: 100%; height: 100%; min-height: 400px"></div>
-            </div>
-            <div>
-                <h3>FIND US</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, laboriosam doloremque odio delectus,
-                    sunt magnam laborum impedit molestiae, magni quae ipsum, ullam eos! Alias suscipit impedit et,
-                    adipisci illo quam.</p>
-                <div>
-                    <p><span></span> 12345 Fake ST NoWhere, AB Country</p>
-                    <p><span></span> (123) 456-7890</p>
-                    <p><span></span>info@website.com</p>
-                </div>
-            </div>
+    <section id="contact" class="contact">
+        <div class="contact-info">
+          <h3>FIND US</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, laboriosam doloremque odio delectus,
+            sunt magnam laborum impedit molestiae, magni quae ipsum, ullam eos! Alias suscipit impedit et,
+            adipisci illo quam.</p>
+          <div class="address">
+            <p><span></span> 12345 Direccion Falsa, Barrio ningun lado</p>
+            <p><span></span> (123) 456-7890</p>
+            <p><span></span> info@gmail.com</p>
+          </div>
         </div>
-    </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.833692793116!2d-58.37486349081373!3d-34.60836667283975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccadb57fd1e5f%3A0xcc737c4eb0a8614b!2sPlaza%20de%20Mayo!5e0!3m2!1ses-419!2sar!4v1684773184219!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </a>
+        </div>
+      </section>
+
 
     <!-- page footer  -->
     <hr>

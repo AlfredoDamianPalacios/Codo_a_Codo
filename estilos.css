@@ -14,17 +14,11 @@ body {
     padding-top: 10px;
 }
 
-header {
-    border: 3px red solid;
-    min-height: 50px;
-    margin: 0.5rem;
-    min-width: 400px;
-}
 
 /* barra de navegacion */
 
 nav {
-    background:rgb(200, 108, 112);
+    background: rgb(200, 108, 112);
     padding: 0 15pc;
 }
 
@@ -40,7 +34,7 @@ a {
 .navar li a {
     display: block;
     padding: 15px 5px;
-    
+
 }
 
 .toggle {
@@ -68,19 +62,79 @@ a {
 
 /* fin barra de navegacion*/
 
+/*HOMEPAGE .. estuve a punto de poner un sopnidito horrible que no se pueda parar solo por pura maldad, pero no, vamos con lo que dejo el profe*/
+.slider-frame {
+    width: 1280px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider-frame img {
+    width: 100%;
+}
+
+@keyframes slide {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+}
 
 
-
-/* seccion #abaut hecho Alejandro*/
+/* seccion #abaut hecho Alejandr(Cuestionable y lo tuve que corregir, pero ya es un aporte :D)*/
 #about {
     display: flex;
     align-items: baseline;
-    background-color:rgb(200, 108, 112);
+    background-color: rgb(200, 108, 112);
     border: 3px red solid;
     margin: 0.5rem;
 }
 
-.hoja1, .hoja2, .hoja3, .hoja4 {
+.hoja1,
+.hoja2,
+.hoja3,
+.hoja4 {
     width: auto;
     height: auto;
     float: left;
@@ -90,31 +144,9 @@ a {
     margin-top: 10px;
     border-radius: 5px;
 }
+
 /* fin seccion abaut*/
 
-#reseñas {
-    border: 3px red solid;
-    min-height: 50px;
-    margin: 0.5rem;
-}
-
-#reservas {
-    border: 3px red solid;
-    min-height: 50px;
-    margin: 0.5rem;
-}
-
-#menu {
-    border: 3px red solid;
-    min-height: 50px;
-    margin: 0.5rem;
-}
-
-#contact {
-    border: 3px red solid;
-    min-height: 50px;
-    margin: 0.5rem;
-}
 
 
 /*review section*/
@@ -124,17 +156,19 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin:0px auto;
+    margin: 0px auto;
     justify-content: center;
-    text-align:center
+    text-align: center
 }
+
 .tarjeta {
     float: left;
     border: 1px solid red;
-    margin:4px; padding: 2px;
-    width:300px;
-    height:210px;
-    overflow:auto;
+    margin: 4px;
+    padding: 2px;
+    width: 300px;
+    height: 210px;
+    overflow: auto;
 }
 
 /*END REVIW SECTION*/
@@ -151,19 +185,19 @@ a {
     align-items: center;
     max-width: 600px;
     margin: 0 auto;
-  }
-  
-  .input-group {
+}
+
+.input-group {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-  }
-  
-  .input-group label {
+}
+
+.input-group label {
     margin-right: 10px;
-  }
-  
-  .reserve-btn {
+}
+
+.reserve-btn {
     display: block;
     width: 100%;
     padding: 10px;
@@ -172,13 +206,81 @@ a {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  .reserve-btn:hover {
+}
+
+.reserve-btn:hover {
     background-color: #2980b9;
-  }
+}
 
 /*end book a table section*/
+
+/*Menu section, wew me estoy cansando de programar tanto tiempo seguido*/
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    border-bottom: black;
+}
+
+.menu-item {
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.menu-item h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.menu-item p {
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+/*endd menu*/
+
+/* contactt section */
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h3 {
+    font-size: 1.2em;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info .address span:before {
+    
+    font-weight: 900;
+    margin-right: 5px;
+}
+
+.map {
+    flex: 1;
+    text-align: right;
+}
+
+.map img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* end contact section */
 
 
 /*  footer */
@@ -191,7 +293,7 @@ a {
 hr {
     height: 1px;
     background-color: red;
-  }
+}
 
 a {
     text-decoration: none;
@@ -200,6 +302,7 @@ a {
 .footer-section {
     flex: 1;
 }
+
 /* end footer */
 
 /*puntos de corte*/
@@ -213,6 +316,7 @@ a {
     .navar {
         justify-content: center;
     }
+
     .navar-logo {
         flex: 1;
     }
@@ -222,19 +326,22 @@ a {
         order: 1;
         display: block;
     }
+
     .toggle {
         flex: 1;
         display: block;
         text-align: right;
         order: 2;
     }
+
     .active .item {
         display: block;
     }
+
     .item {
         display: none;
     }
-    
+
 
 
 
@@ -242,65 +349,66 @@ a {
 }
 
 @media screen and (max-width: 550px) {
-    
-#about {
+
+    #about {
         display: flex;
         align-items: baseline;
         flex-direction: column;
     }
 
-body {
+    body {
         padding-top: 0px;
-}
-nav {
-    padding: 0;
-}
+    }
 
-.navar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-        
-.navar li a {
-    display: block;
-    padding: 15px 5px;
-}
-        
-.toggle {
-    order: 1;
-    font-size: 20px;
-    display:block;
-    padding: 15px;
-}
+    nav {
+        padding: 0;
+    }
 
-.navar-logo {
-    font-size: 20px;
-}
+    .navar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-.item {
-    order: 3;
-    padding: 10px;
-    width: 100%;
-    text-align: center; 
-    display: none;
-}
+    .navar li a {
+        display: block;
+        padding: 15px 5px;
+    }
 
-.item.button {
-    padding: 9px 5px;
-    display: none;
-}
+    .toggle {
+        order: 1;
+        font-size: 20px;
+        display: block;
+        padding: 15px;
+    }
 
-.item:not(.button) a:hover,
-.item a:hover::after {
-            color: #ccc;
-        } 
+    .navar-logo {
+        font-size: 20px;
+    }
 
-.active .item {
-    display: block;
-}
-    
+    .item {
+        order: 3;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+
+    .item.button {
+        padding: 9px 5px;
+        display: none;
+    }
+
+    .item:not(.button) a:hover,
+    .item a:hover::after {
+        color: #ccc;
+    }
+
+    .active .item {
+        display: block;
+    }
+
 }
 
 @media all and (min-width: 960px) {
@@ -308,21 +416,26 @@ nav {
     .navar {
         display: flex;
     }
+
     .item {
         order: 1;
         position: relative;
         display: block;
         width: auto;
     }
+
     .button {
         order: 2;
     }
+
     .toggle {
         display: none;
     }
+
     .active .item {
         display: block;
     }
+
     .navar-logo {
         font-size: 25px;
     }

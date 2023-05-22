@@ -5,46 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REGISTRARSE</title>
+
     <link rel="stylesheet" href="estilos.css">
+    <!-- CDN de Vue, version de desarrollo -->
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://kit.fontawesome.com/bbc127f6a8.js" crossorigin="anonymous"></script>
     <script src="script.js" defer> </script>
+    
 </head>
 <body>
+    <!--  BARRA DE NAVEGACION -->
     <nav>
-        <button>
-            <span></span>
-        </button>
-        <div>
-            <nav class="navar">
-                <ul>
-                    <li>
-                        <a href="principal.html">INICIO</a>
-                    </li>
-                    <li>
-                        <a href="principal.html#abaut">Acerca de</a> <!--Esta parte hace ALE -->
-                    </li>
-                    <li c>
-                        <a href="principal.html#reseñas">Reseñas</a>
-                    </li>
-                    <li>
-                        <a href="principal.html#reservas">Reserva una mesa</a>
-                    </li>
-                </ul>
-                <a class="logo" href="principal.html#home">
-                    <img src="Img/icono/ORIGINAL-modified.png" alt="Logo del restaurante">
-                </a>
-                <ul>
-                    <li>
-                        <a href="principal.html#menu">MENU</a>
-                    </li>
-                    <li>
-                        <a href="principal.html#contact">CONTACTANOS</a> <!-- Esta parte la hace TOMAS -->
-                    </li>
-                    <li c>
-                        <a href="principal.html">VOLVER</a> <!-- Esta parte la hace TOMAS -->
-                    </li>
-                </ul>
-        </div>
+        <ul class="navar">
+            <li class="navar-logo">LOGO</li>
+
+            <li class="item"> <a href="principal.html#home">Inicio</a> </li>
+
+            <li class="item"> <a href="principal.html#about">Acerca de</a> </li> <!--Esta parte hace ALE  -->
+
+            <li class="item"> <a href="principal.html#reseñas">Reseñas</a></li>
+
+            <li class="item"> <a href="principal.html#reservas">Reserva una mesa</a></li>
+
+            <li class="item"> <a href="principal.html#menu">Menú</a> </li><!-- Estaba haciendo Matarazzo, pero nunca se comunico -->
+
+            <li class="item"> <a href="principal.html#contact">Contactanos</a> </li> <!-- Esta parte la hace TOMAS (deja el curso) -->
+
+            <li class="item button"> <a href="#"> Iniciar Sesion </a> </li>
+
+            <li class="item button secondary"> <a rel="stylesheet" href="principal.html#home">VOLVER</a> </li>
+            <!-- Esta parte la hace TOMAS -->
+
+            <li class="toggle"> <a href="#"> <i class="fas fa-bars"></i> </a> </li>
+        </ul>
+
     </nav>
+    <!--   fin BARRA DE NAVEGACION -->
 
     
     <div class="signupFrm">
